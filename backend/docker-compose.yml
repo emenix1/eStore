@@ -1,0 +1,22 @@
+version: '1.2'
+
+services:
+  postgres:
+  container-name: eMarketDB
+  image: postgres:latest
+  restart: always
+  environment:
+    - POSTGRES_USER=${POSTGRES_USER}
+    - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+  ports:
+    - 5432:5432
+  volumes:
+    - postgres_data:/var/lib/postgresql/postgres_data
+  networks:
+    - eMarket
+
+volumes:
+  postgres_data
+
+networks:
+  eMarket
