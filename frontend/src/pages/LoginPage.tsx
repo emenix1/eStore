@@ -75,7 +75,7 @@ const Login: React.FC = () => {
               disabled={isLoading}
               className="w-full flex justify-center py-2 px-4 text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
-              {isLoading ? 'Signing in...' : 'Sign in'}
+              {isLoading ? 'Загрузка...' : 'Войти'}
             </button>
           </div>
           <div className="text-center">
