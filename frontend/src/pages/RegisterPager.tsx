@@ -112,8 +112,8 @@ const Register: React.FC = () => {
               typeof (error as { data?: { message?: string } }).data ===
                 "object"
                 ? (error as { data?: { message?: string } }).data?.message ??
-                  "Registration failed"
-                : "Registration failed"}
+                  "Ошибка регистрации"
+                : "Ошибка регистрации"}
             </div>
           )}
           <div>
