@@ -66,7 +66,7 @@ const Login: React.FC = () => {
           </div>
           {error && (
             <div className="text-red-500 text-sm">
-              {'data' in error ? (error as any).data.message : 'Login failed'}
+              {'data' in error ? (error as any).data.message : 'Ошибка входа'}
             </div>
           )}
           <div>
